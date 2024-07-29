@@ -1,0 +1,304 @@
+#contact {
+    scroll-margin-top: 50px;
+}
+
+.contact {
+    background: #1f242d;
+    min-height: 100vh;
+}
+
+.contact h2 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #ededed;
+}
+
+.contact form {
+    text-align: center;
+    width: 600px;
+}
+
+.input-box .input-field {
+    width: 48.5%;
+}
+
+.input-field .item {
+    margin: 12px 0;
+    background: transparent;
+    font-size: 17px;
+    color: #ededed;
+    width: 100%;
+    padding: 18px;
+    border: 2px solid #54cfff;
+    border-radius: 6px;
+    outline: none;
+}
+
+.input-field .item::placeholder {
+    color: rgba(255, 255, 255, .3);
+}
+
+.input-field.error .item {
+    border-color: #d93025;
+}
+
+.input-field.error .error-text {
+    display: block;
+}
+
+.input-field .error-text {
+    margin: -5px 0 10px;
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    display: none;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form .textarea-field .error-text {
+    margin-top: -12px;
+}
+
+form button {
+    margin-top: 20px;
+    background: rgb(33, 156, 239);
+    font-size: 15px;
+    color: #333;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+}
+
+form button:hover {
+    background-color: #ededed;
+    color: #333;
+}
+
+footer {
+    background: white;
+    font-size: 52px;    
+}
+
+.linkedin {
+    color: black;
+}
+
+.linkedin:hover {
+    color: rgb(33, 156, 239);
+}
+
+.github {
+    color: black;
+}
+
+.github:hover {
+    color: rgb(33, 156, 239);
+}
+
+
+
+.home {
+    margin-bottom: -19px;
+    &::before {
+        content: "";  
+        background-image: url('images/chicago.jpg');
+        position: absolute;
+        background-size: cover;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.60;
+        margin-bottom: 3px;
+    }
+} 
+
+.else {
+    position: relative;
+}
+
+#nav {
+    position: fixed;
+    width: 100%;
+    transition: background-color 0.8s ease-out;
+    display: flex;
+    justify-content: space-between ;
+    padding: 15px;
+    font-size: 18px;
+    opacity: 0.6;
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav.scroll {
+    background-color: white;
+    font-size: 15px;
+    color: rgb(33, 156, 239);
+    opacity: 1;
+    max-height: 50px;
+}
+
+a {
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+a.scroll {
+    color: rgb(33, 156, 239);
+    opacity: 1;
+}
+
+.dropdown:hover .drop-links {
+    display: block;
+}
+
+.drop-links {
+    display: none;
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.drop-links a {
+    display: block;
+    color: black
+}
+
+.drop-links a:hover {
+    color: white;
+}
+
+.drop-links a:hover.scroll {
+    background-color: #ddd;
+}
+
+#about {
+    scroll-margin-top: 50px;
+}
+
+#drop1.scroll {
+    color: black;
+    font-size: 13px;
+}
+
+#projects {
+    scroll-margin-top: 50px;
+}
+
+#drop2.scroll {
+    color: black;
+    font-size: 13px;
+}
+
+#i.scroll {
+    color: black;
+}
+
+#i:hover.scroll {
+    color: rgb(33, 156, 239);
+}
+
+.intro {
+    height: 945px;
+}
+
+h1 {
+    width: 600px;
+}
+
+.intro-text {
+    font-size: 75px;
+    font-weight: bold;
+}
+
+.line {
+    border-bottom: solid rgb(33, 156, 239);
+    border-width: 3px;
+    width: 50px;
+    margin-left: 235px;
+}
+
+p {
+    font-size: 19px;
+}
+
+.intro-subtext {
+    width: 600px;
+}
+
+.more-button {
+    background: rgb(33, 156, 239);
+    font-size: 15px;
+    color: white;
+    padding: 13px 26px;
+    border: none;
+    border-radius: 6px;
+    letter-spacing: 0.5px;
+
+    font-weight: bold;
+}
+
+.more-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.about {
+    min-height: 100vh;
+    background: #1f242d;
+    color: white;
+}
+
+.line2 {
+    border-bottom: solid black;
+    border-width: 3px;
+    width: 50px;
+    margin-left: 1095px;
+}
+
+.about-text {
+    font-size: 18px;
+}
+
+.resume-button {
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 13px 25px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 36px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.resume-button:hover {
+    background-color: black;
+    color: white;
+}
+
+.projects {
+    min-height: 100vh;
+    background-color: green;
+}
+
+/* 
+    Page reload to top of page functionality
+    Web responsivness to screen sizes
+    Test in different browsers
+
+    Go through form on js
+    Go through submit on js
+    Go through name on js
+    Go through .item on js
+    Go through error on js
+    Go through .error-text on js
+    Go through email on js
+    Go through .email on js
+    Go through subject on js
+    Go through message on js
+*/
